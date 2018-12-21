@@ -1,0 +1,31 @@
+.mui-bar {
+	box-shadow: 0 4px 8px -3px #666;
+}
+
+.mui-tab-label {
+	font-size: 11px;
+}
+
+.user-icon {
+	position: relative;
+	top: 4px;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #FF8715;
+}
+
+.yygh {
+	position: absolute;
+	display: flex;
+	bottom: 0px;
+	align-items: center;
+	flex-direction: column;
+	left: calc(50% - 30px);
+}
+
+.yygh>img {
+	top: 0;
+	box-shadow: 0 0 6px -1px #f96c0b;
+	border-radius: 100%;
+}

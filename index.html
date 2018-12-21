@@ -4,79 +4,269 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>重庆(中美)海吉亚肿瘤医院微官网</title>
-		<link href="css/mui.min.css" rel="stylesheet" />
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<title></title>
 		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
-			mui.init({
-				swipeBack: false //启用右滑关闭功能
-			});
+			mui.init();
 		</script>
+		<style type="text/css">
+
+		</style>
 	</head>
 
 	<body>
-		<!-- 侧滑导航根容器 -->
-		<!-- 侧滑导航根容器 -->
-		<div class="mui-off-canvas-wrap mui-draggable">
-			<!-- 菜单容器 -->
-			<!--<aside class="mui-off-canvas-left">
-				<div class="mui-scroll-wrapper">
-					<div class="mui-scroll">
-
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#">
+				<img class="user-icon" src="images/医院首页-选中.png" height="23" />
+				<div class="mui-tab-label">医院首页</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<img class="user-icon" src="images/医院科室.png" height="23" />
+				<div class="mui-tab-label">医院科室</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<div class="yygh">
+					<img class="user-icon" src="images/预约挂号.png" height="60" width="60" />
+					<div class="mui-tab-label">预约挂号</div>
+				</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<img class="user-icon" src="images/医院介绍.png" height="23" />
+				<div class="mui-tab-label">医院介绍</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<img class="user-icon" src="images/个人中心.png" height="23" />
+				<div class="mui-tab-label">个人中心</div>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div class="tongzhi"><img src="images/tongzhi.png" height="13" style="position: relative;top: 2px;left: -4px;"/>24小时急救电话：023-81390999</div>
+			<div class="searchBar">
+				<img src="images/logo.jpg" height="45px" style="float: left;display: inline-block;margin: 0 8px;" />
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="">
+				</div>
+				<svg t="1545268200900" class="icon-bar" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2063" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48">
+					<defs>
+						<style type="text/css"></style>
+					</defs>
+					<path d="M124 256.992q0-26.016 18.496-44.512t44.512-18.496 44.512 18.496 18.496 44.512-18.496 44.512T187.008 320t-44.512-18.496-18.496-44.512z m732 29.024H357.984q-15.008 0-25.504-10.496t-10.496-25.504q0-15.008 10.496-25.504t25.504-10.496H856q15.008 0 25.504 10.496t10.496 25.504q0 15.008-10.496 25.504t-25.504 10.496zM124 512q0-26.016 18.496-44.512t44.512-18.496 44.512 18.496T250.016 512t-18.496 44.512-44.512 18.496-44.512-18.496T124 512z m732 28.992H357.984q-15.008 0-25.504-10.496t-10.496-25.504q0-15.008 10.496-25.504t25.504-10.496H856q15.008 0 25.504 10.496t10.496 25.504q0 15.008-10.496 25.504t-25.504 10.496zM124 767.008q0-26.016 18.496-44.512T187.008 704t44.512 18.496 18.496 44.512-18.496 44.512-44.512 18.496-44.512-18.496-18.496-44.512z m732 28.992H357.984q-15.008 0-25.504-10.496t-10.496-25.504q0-15.008 10.496-25.504t25.504-10.496H856q15.008 0 25.504 10.496t10.496 25.504q0 15.008-10.496 25.504t-25.504 10.496z" p-id="2064" fill="#9f9f9f"></path>
+				</svg>
+			</div>
+			<div class="mui-slider">
+				<div class="mui-slider-group">
+					<!--第一个内容区容器-->
+					<div class="mui-slider-item">
+						<img src="images/banner1.jpg" />
+					</div>
+					<!--第二个内容区-->
+					<div class="mui-slider-item">
+						<img src="images/banner1.jpg" />
 					</div>
 				</div>
-			</aside>-->
-			<!-- 主页面容器 -->
-			<div class="mui-inner-wrap">
-				<!-- 主页面标题 -->
-				<div class="mui-content mui-scroll-wrapper">
-					<ul class="mui-table-view mui-grid-view mui-grid-9">
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="PageOne.html">
-								<span class="mui-icon mui-icon-home"></span>
-								<div class="mui-media-body">医院简介</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="#">
-								<span class="mui-icon mui-icon-person"></span>
-								<div class="mui-media-body">专家团队</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="#">
-								<span class="mui-icon mui-icon-chatbubble"></span>
-								<div class="mui-media-body">预约挂号</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="#">
-								<span class="mui-icon mui-icon-location"></span>
-								<div class="mui-media-body">医院导航</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="#">
-								<span class="mui-icon mui-icon-search"></span>
-								<div class="mui-media-body">医院环境</div>
-							</a>
-						</li>
-						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-							<a href="#">
-								<span class="mui-icon mui-icon-phone"></span>
-								<div class="mui-media-body">联系电话</div>
-							</a>
-						</li>
-					</ul>
+			</div>
+			<div class="title">
+				<h3>新闻中心</h3>
+				<p>NEWS CENTER</p>
+			</div>
+			<div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" class="">
+							<img class="mui-media-object mui-pull-left" src="images/banner1.jpg">
+							<div class="mui-media-body">
+								文字标题
+								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
+								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<div class="more">more+</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" class="">
+							<img class="mui-media-object mui-pull-left" src="images/banner1.jpg">
+							<div class="mui-media-body">
+								文字标题
+								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
+								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<div class="more">more+</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" class="">
+							<img class="mui-media-object mui-pull-left" src="images/banner1.jpg">
+							<div class="mui-media-body">
+								文字标题
+								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
+								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<div class="more">more+</div>
+							</div>
+						</a>
+					</li>
+					<div class="read-more">
+						查看更多 >>
+					</div>
+					<br />
+				</ul>
+			</div>
+
+			<div class="title" style="background-color: #f5f4f4;">
+				<h3>专家团队</h3>
+				<p>EXPERT TEAM</p>
+			</div>
+			<div class="EXPERT-TEAM">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="content">
+								<div class="doctor-img">
+									<img src="images/徐.jpg" />
+								</div>
+								<div class="doctor-msg">
+									<div class="doctor-name">
+										<h5>徐晓薇</h5>
+										<h6>主任医师</h6>
+									</div>
+									<div class="doctor-text">
+										<ul>
+											<li>重庆市沙坪坝区政协第九、十、十一届政协委员</li>
+											<li>重庆市放射肿瘤学学会委员</li>
+											<li>重庆市癌症康复与姑息治疗专委会委员</li>
+											<li>...</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="content">
+								<div class="doctor-img">
+									<img src="images/徐.jpg" />
+								</div>
+								<div class="doctor-msg">
+									<div class="doctor-name">
+										<h5>徐晓薇</h5>
+										<h6>主任医师</h6>
+									</div>
+									<div class="doctor-text">
+										<ul>
+											<li>重庆市沙坪坝区政协第九、十、十一届政协委员</li>
+											<li>重庆市放射肿瘤学学会委员</li>
+											<li>重庆市癌症康复与姑息治疗专委会委员</li>
+											<li>...</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+
+				<div class="read-more read-more-doctor">
+					更多医生 >>
 				</div>
 			</div>
+			<div class="title">
+				<h3>尖端设备</h3>
+				<p>CUTTING-EDGE EQUIPMENT</p>
+			</div>
+			<div class="EQUIPMENT">
+				<div class="EQUIPMENT-card">
+					<img src="images/banner1.jpg" />
+					<p>1.5T磁共振成像MRI</p>
+				</div>
+				<div class="EQUIPMENT-card">
+					<img src="images/banner1.jpg" />
+					<p>1.5T磁共振成像MRI</p>
+				</div>
+				<div class="EQUIPMENT-card">
+					<img src="images/banner1.jpg" />
+					<p>1.5T磁共振成像MRI</p>
+				</div>
+				<div class="EQUIPMENT-card">
+					<img src="images/banner1.jpg" />
+					<p>1.5T磁共振成像MRI</p>
+				</div>
+			</div>
+			<div class="read-more">
+				查看更多 >>
+			</div>
+			<div class="img01">
+				让患者满意，是我们莫大的使命
+			</div>
+			<div class="tel">
+				<h5 style="color: #000;"><img src="images/tel.png" height="18"/>&nbsp;&nbsp;24小时急救电话</h5>
+				<h4>023-81390999</h4>
+			</div>
+			<div class="tel2">
+				<div class="">
+					<div class="img-bg1">
+						<span class="title2">24小时总值班</span>
+						<span>023-81390800</span>
+					</div>
+				</div>
+				<div class="">
+					<img src="images/logo.jpg" />
+				</div>
+				<div class="">
+					<div class="img-bg2">
+						<span>门诊服务台</span>
+						<span class="title2">08:00-17:00</span>
+						<span>023-81390866</span>
+					</div>
+				</div>
+			</div>
+			<div class="tel3">
+				<div class="">
+					<div class="img-nobg">
+						<span>医院总机</span>
+						<span class="title3">08:00-17:00</span>
+						<span style="color: #ff7c00;">023-91398066</span>
+					</div>
+				</div>
+				<div class="">
+					<div class="img-bg3">
+						<span>体检中心</span>
+						<span class="title2">24小时</span>
+						<span>023-81390801</span>
+						<span>17830859168</span>
+					</div>
+				</div>
+				<div class="">
+					<div class="img-nobg">
+						<span class="title3">医保科</span>
+						<span style="color: #ff7c00;font-size: 14px;font-weight: 400;">023-81390798</span>
+					</div>
+				</div>
+			</div>
+			<h4 class="dizhi"><img src="images/dizhi.png" height="20"/>重庆市沙坪坝区大学城思贤路200号</h4>
+			<div class="">
+			</div>
+			<div class="">
+				<div class="mui-row">
+				</div>
+			</div>
+			<div class="null"></div>
+			<div class="null"></div>
+			<div class="null"></div>
 		</div>
-		<script>
-			$("header").click(function(){
-				mui('.mui-off-canvas-wrap').offCanvas('show');
-			})
-		</script>
 	</body>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true, // 循环模式选项
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		})
+	</script>
 
 </html>
