@@ -44,22 +44,28 @@ h3 {
 }
 
 .user-content {
-	padding: 0 10px;
+	padding: 0 20px;
 	width: 100%;
-	text-align: center;
+	text-align: left;
+	min-height: calc(100vh - 316px);
 }
 
 .user-content img {
-	max-width: 80vw;
+	width: 100%;
 	margin: 4px auto;
 }
 
 .user-content>p {
 	color: #222;
-	text-align: left;
-	text-indent: 24px;
 }
-.good{
+
+.good {
 	height: 200px;
 	width: 100vw;
 }
+
+.change {
+	margin: 20px 0;
+	margin-left: 20px;
+}
+

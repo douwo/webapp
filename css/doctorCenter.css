@@ -23,7 +23,7 @@ body {
 	bottom: 20vh;
 }
 .mui-row{
-	padding: 0 3vw;
+	padding: 0 1.5vw;
 	background-color: #fff;
 }
 .doctor-card-img img{
@@ -59,18 +59,17 @@ body {
 .doctor-car-msg p{
 	color: #222;
 }
-.Bpage{
-	display: none;
-}
 .doctor-car:nth-child(1)>.Apage{
 	display: block;
 }
+.Apage{
+	padding: 0 1.5vw;
+}
 .Bpage{
-	margin-top: 3vw;
 	padding: 1vw 1.5vw;
 	background-color: #ff7c00;
 	color: #fff;
-	max-height: calc(47vw + 64px);
+	height: auto;
 	overflow: hidden;
 }
 .Bpage h4{
