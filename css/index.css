@@ -2,7 +2,15 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	/*background-color: #f5f4f4;*/
+}
+.gotop{
+	height: 50px;
+	width: 50px;
+	background: url(../images/gotop.png);
+	background-size: cover;
+	position: fixed;
+	right: 10px;
+	bottom: 20vh;
 }
 
 .null {
@@ -19,14 +27,16 @@ body {
 	font-size: 14px;
 }
 .searchBar {
-	height: 50px;
+	height: 45px;
+	width: 100%;
 	background-color: white;
 }
 
 .mui-search {
 	display: inline-block;
+	bottom: 2px;
 	left: 4px;
-	width: calc(100% - 120px);
+	width: calc(100% - 100px);
 }
 
 .mui-icon-search:before {
@@ -44,20 +54,17 @@ input[type=search],
 	height: 30px;
 	width: auto;
 	position: relative;
-	top: 10px;
-	left: 11px;
+	right: 0px;
+	top: 8px;
 }
 
-.mui-slider {
+.mui-slider,.mui-slider img {
 	height: 220px;
 }
 
-.mui-slider img {
-	height: 220px;
-}
 
 .title {
-	padding: 16px 0 1px;
+	padding: 16px 0;
 	background-color: #fff;
 }
 
@@ -137,7 +144,6 @@ input[type=search],
 	background: url(../images/bg1.png);
 	background-size: cover;
 	position: relative;
-	background-attachment: fixed;
 }
 
 .EXPERT-TEAM .content {
@@ -150,12 +156,11 @@ input[type=search],
 	height: 80%;
 	float: left;
 	width: 40%;
-	text-align: center;
 }
 
 .EXPERT-TEAM .content>.doctor-img>img {
-	height: 164px;
-	width: auto;
+	height: 100%;
+	width: 100%;
 }
 
 .EXPERT-TEAM .content>.doctor-msg {
@@ -240,9 +245,11 @@ input[type=search],
 	background: transparent;
 	height: auto;
 	margin: 0 auto;
+	position: absolute;
+	bottom: 10px;
+	left: 36%;
 	color: #fff;
 	border: 1px solid #fff;
-	position: relative;
 }
 
 .swiper-button-prev {
@@ -448,4 +455,23 @@ input[type=search],
 	position: relative;
 	top: 2px;
 	right: 4px;
+}
+.logoQR{
+	padding: 40px 10px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #fff;
+}
+.logoQR img{
+	width: 100%;
+}
+.logoQR img:nth-child(1){
+	padding:0 4px;
+	position: relative;
+}
+.logoQR img:nth-child(1):before{
+	content: "";
+	height: 50%;
+	background-color: #000000;
+	
 }

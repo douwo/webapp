@@ -1,0 +1,104 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑","黑体";
+}
+.gotop{
+	height: 50px;
+	width: 50px;
+	background: url(../images/gotop.png);
+	background-size: cover;
+	position: fixed;
+	right: 10px;
+	bottom: 20vh;
+}
+.homepage{
+	height: 50px;
+	width: 50px;
+	background: url(../images/homepage.png);
+	background-size: cover;
+	position: fixed;
+	right: 10px;
+	bottom: 20vh;
+}
+.mui-row{
+	padding: 0 3vw;
+	background-color: #fff;
+}
+.doctor-card-img img{
+	width: 100%;
+	margin-top: 3vw;
+}
+.doctor-card-img{
+	overflow: hidden;
+	height: 50vw;
+}
+.doctor-car:nth-child(2n){
+	padding-left:1.5vw;
+}
+.doctor-car:nth-child(2n+1){
+	padding-right:1.5vw;
+}
+.doctor-car-msg{
+	height: 64px;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 16px;
+	padding-left: 10px;
+	box-shadow: 0 0 16px -3px #ccc;
+}
+.doctor-car-msg>.name{
+	color: #ff7c00;
+}
+.doctor-car-msg>.zc{
+	font-size: 14px;
+	margin-left: 4px;
+	color: #777;
+}
+.doctor-car-msg p{
+	color: #222;
+}
+.Bpage{
+	display: none;
+}
+.doctor-car:nth-child(1)>.Apage{
+	display: block;
+}
+.Bpage{
+	margin-top: 3vw;
+	padding: 1vw 1.5vw;
+	background-color: #ff7c00;
+	color: #fff;
+	max-height: calc(47vw + 64px);
+	overflow: hidden;
+}
+.Bpage h4{
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+}
+.Bpage img:nth-child(1){
+	height: 22px;
+	width: 22px;
+	vertical-align: text-bottom;
+	margin-right: 8px;
+}
+.Bpage ul{
+	padding-left: 0;
+	font-size: 14px;	
+}
+.Bpage ul li{
+	list-style: none;
+	display: inline-block;
+}
+.Bpage ul:nth-child(2) li{
+	text-decoration: underline; 
+}
+.time-no{
+	color: #ddd;
+	text-decoration: none !important;
+}
+.jianjie>li{
+	font-size: 12px;
+}

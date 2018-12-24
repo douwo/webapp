@@ -29,3 +29,20 @@
 	box-shadow: 0 0 6px -1px #f96c0b;
 	border-radius: 100%;
 }
+.mui-popover .mui-table-view{
+	background-color: #ff7c00;
+	color: #fff;
+	text-align: center;
+}
+.mui-popover{
+	width: 200px;
+}
+.mui-table-view-cell:after{
+	background-color: #fff;
+}
+.mui-popover .mui-table-view-cell{
+	padding: 12px 15px 12px 15px;
+}
+.mui-popover .mui-popover-arrow:after{
+	background: #ff7c00;
+}

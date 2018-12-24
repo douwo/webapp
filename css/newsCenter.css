@@ -1,0 +1,66 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+.gotop{
+	height: 50px;
+	width: 50px;
+	background: url(../images/gotop.png);
+	background-size: cover;
+	position: fixed;
+	right: 10px;
+	bottom: calc(20vh - 0px);
+}
+.homepage{
+	height: 50px;
+	width: 50px;
+	background: url(../images/homepage.png);
+	background-size: cover;
+	position: fixed;
+	right: 10px;
+	bottom: calc(20vh - 60px);
+}
+.null {
+	background-color: #f5f4f4;
+	height: 60px;
+}
+.titleHot{
+	height: 18px;
+	width: auto;
+	padding: 0 4px;
+}
+
+.gaiyao {
+	text-indent: 24px;
+	color: #898989;
+}
+
+.more {
+	float: right;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+}
+.mui-table-view-cell {
+	padding: 15px 15px 8px 15px;
+}
+
+.mui-table-view:before,
+.mui-table-view:after {
+	background-color: transparent;
+}
+
+.mui-media-body {
+	overflow: auto;
+	white-space: normal;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.mui-table-view .mui-media-object {
+	height: 100px;
+	max-width: 100px;
+}
+
+/*分页样式*/
