@@ -27,18 +27,23 @@ body {
 	font-size: 14px;
 }
 .searchBar {
+	display: flex;
 	height: 45px;
-	width: 100%;
+	width: 99%;
 	background-color: white;
+	align-items: center;
 }
-
 .mui-search {
-	display: inline-block;
-	bottom: 2px;
-	left: 4px;
 	width: calc(100% - 100px);
+	margin-top: 14px;
 }
-
+.icon-bar {
+	height: 30px;
+	width: auto;
+	position: relative;
+	right: 0px;
+	top: 2px;
+}
 .mui-icon-search:before {
 	position: absolute;
 	top: 7px;
@@ -50,13 +55,6 @@ input[type=search],
 	border-radius: 40px;
 }
 
-.icon-bar {
-	height: 30px;
-	width: auto;
-	position: relative;
-	right: 0px;
-	top: 8px;
-}
 
 .mui-slider,.mui-slider img {
 	height: 220px;
@@ -185,7 +183,6 @@ input[type=search],
 	flex-direction: column;
 	margin: 0 auto;
 	width: 50%;
-	height: 40px;
 	padding: 10px;
 	border: 1px solid white;
 	position: relative;
