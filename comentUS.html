@@ -1,45 +1,55 @@
 <!doctype html>
-<html lang="zh-cn">
-
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>联系我们</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
-		<link rel="stylesheet" type="text/css" href="css/Content.css" />
-		<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css" />
-		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/gotop.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/comentUS.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
 		<style type="text/css">
-			a {
-				color: #666;
-				font-size: 14px;
+			.clear{
+				border: none;
+				padding: 0;
+				font-size: 16px;
+				color: #0776bc;
+				background-color: transparent;
+				top: 54% !important;
+				left: 40vw;
+			}
+			.clear:active,.clear:focus{
+				background-color: transparent;
+			}
+			.user-content{
+				height: calc(100vh - 120px);
 			}
 		</style>
 	</head>
 
 	<body>
-		<h3>联系电话</h3>
-		<div class="fulltitle"><span>发表于2018/12/24</span>&nbsp;&nbsp;阅读量：<span>123</span>&nbsp;&nbsp;点赞：<span>666</span></div>
-		<div class="user-content">
-			<div class="article-n">
-				<span style="color:#ff0000;"><span style="font-size:16px;">24小时急救电话：023-81390999</span></span><br>
-				<span style="font-size: 16px;">24小时总值班：81390800</span><br>
-				<span style="font-size:16px;">门诊服务台：81398066 (上午8:00-下午5:00)<br>
-医院总机：81390808&nbsp;</span><span style="font-size: 16px;">(上午8:00-下午5:00)</span><br>
-				<span style="font-size:16px;">体检中心：81390801&nbsp; &nbsp;17830859168(24小时)<br>
-医保科：81390798</span><br>
-				<br>
-
-			</div>
-		</div>
-		<div class="change">
-			<a href="#">上一篇：<span>文章标题</span></a>
-			<br />
-			<a href="#">下一篇：<span>文章标题</span></a>
-		</div>
+		<ul class="mui-table-view user-content">
+			<li class="mui-table-view-cell">
+				<a href="tel:02381390999" class="mui-navigate-right">24小时急救电话：<sapn class="title2">023-81390999</sapn></a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="tel:02381390800" class="mui-navigate-right">24小时总值班：<sapn class="title2">023-81390800</sapn></a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a style="" href="tel:81390801" class="mui-navigate-right">体检中心：<sapn class="title2">81390801</sapn><a class="mui-btn clear" href="tel:17830859168">17830859168(24小时)</a></a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="tel:02381390808" class="mui-navigate-right">医院总机：<sapn class="title2">023-81390808</sapn> (8:00-17:00)</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="tel:02381398066" class="mui-navigate-right">门诊服务台：<sapn class="title2">023-81398066</sapn> (8:00-17:00)</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="tel:02381390798" class="mui-navigate-right">医保科：<sapn class="title2">023-81390798</sapn></a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="http://3gimg.qq.com/lightmap/v1/wxmarker/index.html?marker=coord:29.58646,106.30131;title:%E9%87%8D%E5%BA%86%E6%B5%B7%E5%90%89%E4%BA%9A;addr:%E4%B8%AD%E5%9B%BD%E9%87%8D%E5%BA%86%E5%B8%82%E9%87%8D%E5%BA%86%E5%B8%82%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8C%BA&referer=wexinmp_profile" class="mui-navigate-right">地址：重庆市沙坪坝区大学城思贤路200号 <img style="height: 18px;vertical-align: text-bottom;" src="images/map.png"/></a>
+			</li>
+		</ul>
 		<div class="footer">
 			<p>地址: 重庆市沙坪坝区大学城思贤路200号 | 网址: www.cqhjyzl.com</p>
 			<p>渝卫医广受【2018】233-7 号 | 渝ICP备160 04077号-3</p>
@@ -47,8 +57,8 @@
 		</div>
 		<div class="homepage">
 		</div>
-		<div class="gotop">
-		</div>
+		
+		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>

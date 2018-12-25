@@ -1,0 +1,87 @@
+.shebei-img>img{
+	height: auto;
+	width: 100%;
+}
+.user-content>h4{
+	margin-top: 20px;
+	font-weight: 400;
+	color: #ff7c00;
+	position: relative;
+	padding-bottom: 6px;
+	font-size: 20px;
+}
+.user-content>h4>img,
+.user-content>.jzsj>img{
+	height: 18px;
+	width: auto;
+	vertical-align: text-bottom;
+	margin-right: 6px;
+}
+.user-content>.jzsj{
+	color: #FF7C00;
+	text-align: center;
+}
+.user-date{
+	text-align: center;
+	margin: 20px 0;
+}
+.user-date ul{
+	padding-left: 0;
+	font-size: 14px;	
+}
+.user-date ul li{
+	list-style: none;
+	width: 10vw;
+	display: inline-block;
+	text-decoration:underline;
+}
+.doctor-msg>p{
+	color: #333;
+	text-indent: 28px;
+}
+.time-no{
+	color: #aaa;
+	text-decoration: none !important;
+}
+.user-date ul:nth-child(2) li{
+	text-decoration: underline; 
+}
+.doctor-msg>h4{
+		text-align: center;
+		color: #FF7C00;
+		font-weight: 400;
+		font-size: 18px;
+}
+.user-content>.jzsj>img{
+position: relative;	
+top: 2px;
+}
+
+.user-content>h5{
+	color: #555;
+}
+.user-content>p{
+	color: #9f9f9f;
+	font-size: 12px;
+}
+.shebei-msg ul {
+	padding-left: 0px;
+}
+
+.shebei-msg li {
+	text-align: left;
+	font-size: 12px;
+	list-style: none;
+	line-height: 18px;
+	color: #333;
+}
+
+.shebei-msg li:before {
+	content: "›";
+	font-size: 18px;
+	position: relative;
+	bottom: 0px;
+	text-shadow: none;
+	right: 5px;
+	color: #ff7c00;
+}

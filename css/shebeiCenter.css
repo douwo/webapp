@@ -32,7 +32,7 @@ body {
 }
 .doctor-card-img{
 	overflow: hidden;
-	height: 50vw;
+	/*height: 50vw;*/
 }
 .doctor-car:nth-child(2n){
 	padding-left:1.5vw;
@@ -44,60 +44,13 @@ body {
 	height: 64px;
 	width: 100%;
 	background-color: #fff;
-	padding-top: 16px;
+	padding-top: 14px;
 	padding-left: 10px;
 	box-shadow: 0 0 16px -3px #ccc;
 }
 .doctor-car-msg>.name{
-	color: #ff7c00;
-}
-.doctor-car-msg>.zc{
-	font-size: 14px;
-	margin-left: 4px;
-	color: #777;
-}
-.doctor-car-msg p{
-	color: #222;
-}
-.doctor-car:nth-child(1)>.Apage{
-	display: block;
+	color: #333;
 }
 .Apage{
 	padding: 0 1.5vw;
-}
-.Bpage{
-	padding: 1vw 1.5vw;
-	background-color: #ff7c00;
-	color: #fff;
-	height: auto;
-	overflow: hidden;
-}
-.Bpage h4{
-	line-height: 22px;
-	font-weight: 400;
-	color: #fff;
-}
-.Bpage img:nth-child(1){
-	height: 22px;
-	width: 22px;
-	vertical-align: text-bottom;
-	margin-right: 8px;
-}
-.Bpage ul{
-	padding-left: 0;
-	font-size: 14px;	
-}
-.Bpage ul li{
-	list-style: none;
-	display: inline-block;
-}
-.Bpage ul:nth-child(2) li{
-	text-decoration: underline; 
-}
-.time-no{
-	color: #ddd;
-	text-decoration: none !important;
-}
-.jianjie>li{
-	font-size: 12px;
 }
