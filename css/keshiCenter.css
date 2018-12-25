@@ -1,0 +1,24 @@
+html,body{
+	/*background-color: #000000;*/
+}
+.mui-table-view-cell{
+	height: 45px;
+	line-height: 26px;
+	font-size: 16px;
+}
+.title2{
+	margin-left: 8px;
+	font-size: 14px !important;
+	color: #ff7c00;
+}
+.mui-ios .mui-table-view-cell{
+	border-radius: 4px;
+	margin-top: 3px;
+	background-color: #fff;
+}
+.mui-table-view{
+	background-color: transparent;
+}
+.mui-table-view-cell:after{
+	background-color: transparent;
+}

@@ -1,0 +1,45 @@
+.shebei-img>img{
+	height: auto;
+	width: 100%;
+}
+.user-content>h4{
+	margin-top: 20px;
+	font-weight: 400;
+	color: #ff7c00;
+	position: relative;
+	border-bottom: 1px solid #999;
+	padding-bottom: 6px;
+}
+.user-content>h4:before{
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 30%;
+	background-color: #ff7c00;
+	bottom: -2px;
+}
+.user-content>p{
+	color: #9f9f9f;
+	font-size: 12px;
+}
+.shebei-msg ul {
+	padding-left: 0px;
+}
+
+.shebei-msg li {
+	text-align: left;
+	font-size: 12px;
+	list-style: none;
+	line-height: 18px;
+	color: #333;
+}
+
+.shebei-msg li:before {
+	content: "›";
+	font-size: 18px;
+	position: relative;
+	bottom: 0px;
+	text-shadow: none;
+	right: 5px;
+	color: #ff7c00;
+}

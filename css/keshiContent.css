@@ -1,0 +1,55 @@
+.mui-control-item{
+	background-color: ;
+}
+.mui-segmented-control{
+	border: 0;
+}
+.mui-segmented-control>.mui-control-item{
+	color: #999;
+	border: none;
+	height: 44px;
+	line-height: 44px;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background-color: transparent;
+	color: #222;
+	font-size: 16px;
+	position: relative;
+	top: 2px;
+}
+.mui-segmented-control .mui-control-item.mui-active:before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 60%;
+	background-color: #FF7C00;
+	bottom: 2px;
+	left: 20%;
+}
+.title2{
+	margin-left: 8px;
+	font-size: 14px !important;
+	color: #ff7c00;
+}
+.user-content h5{
+	text-align: center;
+	position: relative;
+	margin: 14px 0;
+	color: #FF7C00;
+}
+.user-content h5:before{
+	content: ">>";
+	position: relative;
+	right: 4px;
+}
+.user-content h5:after{
+	content: "<<";
+	position: relative;
+	left: 4px;
+}
+.user-content p.black{
+	color: #222;
+}
+.user-content p{
+	margin: 0;
+}
