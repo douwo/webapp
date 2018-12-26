@@ -1,5 +1,6 @@
 .mui-bar {
 	box-shadow: 0 4px 8px -3px #666;
+	z-index: 101;
 }
 
 .mui-tab-label {

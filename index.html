@@ -26,11 +26,11 @@
 
 	<body>
 		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active" href="#">
+			<a class="mui-tab-item mui-active" href="index.html">
 				<img class="user-icon" src="images/医院首页-选中.png" height="23" />
 				<div class="mui-tab-label">医院首页</div>
 			</a>
-			<a class="mui-tab-item" href="">
+			<a class="mui-tab-item" href="keshiCenter.html">
 				<img class="user-icon" src="images/医院科室.png" height="23" />
 				<div class="mui-tab-label">医院科室</div>
 			</a>
@@ -40,7 +40,7 @@
 					<div class="mui-tab-label">预约挂号</div>
 				</div>
 			</a>
-			<a class="mui-tab-item" onclick="window.location.href = 'yiyuanjieshao.html'">
+			<a class="mui-tab-item" href="yiyuanjieshao.html">
 				<img class="user-icon" src="images/医院介绍.png" height="23" />
 				<div class="mui-tab-label">医院介绍</div>
 			</a>
@@ -303,7 +303,10 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			}
-		})
+		});
+		mui('body').on('tap', 'a', function() {
+			window.top.location.href = this.href;
+		});
 	</script>
 
 </html>

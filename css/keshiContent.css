@@ -31,6 +31,9 @@
 	font-size: 14px !important;
 	color: #ff7c00;
 }
+.user-content>h4{
+	color: #222;	
+}
 .user-content h5{
 	text-align: center;
 	position: relative;

@@ -1,14 +1,40 @@
 <!doctype html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>联系我们</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="css/keshiCenter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/keshiCenter.css" />
 	</head>
 
 	<body>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<img class="user-icon" src="images/医院首页.png" height="23" />
+				<div class="mui-tab-label">医院首页</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="keshiCenter.html">
+				<img class="user-icon" src="images/医院科室-选中.png" height="23" />
+				<div class="mui-tab-label">医院科室</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<div class="yygh">
+					<img class="user-icon" src="images/预约挂号.png" height="60" width="60" />
+					<div class="mui-tab-label">预约挂号</div>
+				</div>
+			</a>
+			<a class="mui-tab-item" href="yiyuanjieshao.html">
+				<img class="user-icon" src="images/医院介绍.png" height="23" />
+				<div class="mui-tab-label">医院介绍</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<img class="user-icon" src="images/个人中心.png" height="23" />
+				<div class="mui-tab-label">个人中心</div>
+			</a>
+		</nav>
 		<ul class="mui-table-view">
 			<li class="mui-table-view-cell">
 				<a class="mui-navigate-right">肿瘤中心</a>
@@ -49,7 +75,10 @@
 		</ul>
 		<script src="js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui('body').on('tap', 'a', function() {
+				window.top.location.href = this.href;
+			});
 		</script>
 	</body>
 

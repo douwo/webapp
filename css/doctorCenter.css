@@ -26,6 +26,13 @@ body {
 	padding: 0 1.5vw;
 	background-color: #fff;
 }
+.doctor{
+	position: relative;
+	height: 50vh;
+	width: 46vw;
+	overflow: hidden;
+	margin-left: 1.5vw;
+}
 .doctor-card-img img{
 	width: 100%;
 	margin-top: 3vw;
@@ -63,14 +70,43 @@ body {
 	display: block;
 }
 .Apage{
-	padding: 0 1.5vw;
+	position: absolute;
+	padding: 0 0.5vw;
+	padding-top: 0.25vw;
+	transition: all 2s; 
+	transform: rotateY(0);
+	transform-origin: left;
+	perspective: 500;
+	-webkit-perspective: 500;
+}
+.Apage:hover>.Bpage{
+	transition: all 1s;
+	transform: rotateY(0deg);
+	transform-origin: right;
+	perspective: 500;
+	-webkit-perspective: 500;
 }
 .Bpage{
-	padding: 1vw 1.5vw;
 	background-color: #ff7c00;
 	color: #fff;
 	height: auto;
 	overflow: hidden;
+	position: absolute;
+	top: 3vw;
+	padding: 1.5vw 1.5vw;
+	padding-bottom: 0;
+	left: 0;
+	transition: all .6s;
+	transform: rotateY(180deg);
+	transform-origin: right;
+	perspective: 500;
+	-webkit-perspective: 500;
+}
+.Bpage:hover{
+	transform: rotateY(0deg);
+	transform-origin: right;
+	perspective: 500;
+	-webkit-perspective: 500;
 }
 .Bpage h4{
 	line-height: 22px;
