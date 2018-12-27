@@ -1,0 +1,110 @@
+html,
+body {
+	/*background-color: #000000;*/
+}
+.header{
+	height: 200px;
+	width: 100%;
+	background: url(../images/个人-bg.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.login-no{
+	display: none;
+	position: absolute;
+	left: calc(50% - 54px);
+	bottom: 20px;
+}
+.login-no>h4{
+	color: #fff;
+	opacity: 0.7;
+	font-weight: 400;
+}
+
+.login-active{
+	text-align: center;
+}
+.login-active>h4{
+	color: #fff;
+	opacity: 0.7;
+	font-weight: 400;
+}
+.login-active>.head{
+	padding-top: 40px;
+	border-radius: 100%;
+}
+.login-active>.head>img{
+	height: 100px;
+	width: 100px;
+}
+.user-btn{
+	padding:6px 40px;
+	opacity: 0.7;
+	color: #fff;
+	border: none;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 20px;
+	font-size: 16px;
+}
+
+.mui-table-view-cell {
+	height: 45px;
+	line-height: 26px;
+	font-size: 16px;
+}
+
+.title2 {
+	color: #0776bc;
+}
+
+.mui-ios .mui-table-view-cell {
+	border-radius: 4px;
+	margin-top: 3px;
+	background-color: #fff;
+}
+
+.mui-table-view {
+	background-color: transparent;
+	margin: 0 5vw;
+}
+.mui-table-view:before{
+	background-color:transparent;
+}
+.mui-table-view:after{
+	background-color:transparent;
+}
+.mui-table-view-cell{
+	font-size: 14px;
+}
+.mui-table-view-cell:nth-child(1){
+	margin-top: 3vw;
+}
+.mui-table-view-cell:last-child(1){
+	margin-bottom: 3vw;
+}
+.mui-table-view-cell:after {
+	background-color: transparent;
+}
+.mui-table-view-cell img{
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+	right: 6px;
+}
+.clear {
+	border: none;
+	padding: 0;
+	font-size: 16px;
+	color: #0776bc;
+	background-color: transparent;
+	top: 54% !important;
+	left: 40vw;
+}
+
+.clear:active,
+.clear:focus {
+	background-color: transparent;
+}

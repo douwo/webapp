@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mypage.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="login-no">
+				<h4>Hi&nbsp;等您很久啦!</h4>
+				<br /><br />
+				<button class="user-btn">登录</button>
+			</div>
+			<div class="login-active">
+				<div class="head"><img src="images/head.png" /></div>
+				<h4>用户名</h4>
+			</div>
+		</div>
+		<ul class="mui-table-view user-content">
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/我的就诊人.png" />我的就诊人
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/我的挂号信息.png" />我的挂号信息
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/放射科报告.png" />放射报告查询
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/检验报告.png" />检验报告查询
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/彩超报告.png" />彩超报告查询
+				</a>
+			</li>
+			<li class="mui-table-view-cell">
+				<a href="" class="mui-navigate-right">
+					<img src="images/病理报告.png" />病理报告查询
+				</a>
+			</li>
+		</ul>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<img class="user-icon" src="images/医院首页.png" height="23" />
+				<div class="mui-tab-label">医院首页</div>
+			</a>
+			<a class="mui-tab-item" href="keshiCenter.html">
+				<img class="user-icon" src="images/医院科室.png" height="23" />
+				<div class="mui-tab-label">医院科室</div>
+			</a>
+			<a class="mui-tab-item" href="">
+				<div class="yygh">
+					<img class="user-icon" src="images/预约挂号.png" height="60" width="60" />
+					<div class="mui-tab-label">预约挂号</div>
+				</div>
+			</a>
+			<a class="mui-tab-item" href="yiyuanjieshao.html">
+				<img class="user-icon" src="images/医院介绍.png" height="23" />
+				<div class="mui-tab-label">医院介绍</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="#">
+				<img class="user-icon" src="images/个人中心-选中.png" height="23" />
+				<div class="mui-tab-label">个人中心</div>
+			</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gotop.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui('body').on('tap', 'a', function() {
+				window.top.location.href = this.href;
+			});
+		</script>
+	</body>
+
+</html>

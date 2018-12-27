@@ -1,0 +1,11 @@
+.content{
+	margin-top: 20px;
+	background-color: #fff;
+	position: relative;
+}
+.huibiao{
+	width: 160px;
+	height: 32px;
+	background: url(../images/huibiao.png);
+	background-size: cover;
+}
