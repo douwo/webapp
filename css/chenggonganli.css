@@ -2,10 +2,45 @@
 	margin-top: 20px;
 	background-color: #fff;
 	position: relative;
+	padding-bottom: 6px;
 }
 .huibiao{
-	width: 160px;
-	height: 32px;
+	width: 120px;
+	height: 24px;
 	background: url(../images/huibiao.png);
 	background-size: cover;
+	position: relative;
+	top: -4px;
+	left: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 2px;
+}
+.img{
+	margin: 8px;
+	padding: 8px;
+	background-color:#eee ;
+}
+.img>img{
+	height: 44vw;
+	width: 48%;
+}
+.img>img:nth-child(1){
+	margin-right: 2vw;
+}
+.img>.mui-row>div{
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+}
+.img>.mui-row>div>span{
+	color: #FF7C00;
+}
+.content>.text{
+	padding: 0 10px;
+}
+.content>.text>p{
+	margin: 2px 0;
+	color: #333;
 }
