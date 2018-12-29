@@ -12,7 +12,24 @@ body {
 	right: 10px;
 	bottom: 20vh;
 }
-
+.swiper-container{
+	height: 200px;
+	display: flex;
+	overflow: hidden;
+}
+.swiper-container img{
+	height: 200px;
+	width: 100vw;
+}
+.swiper-container-horizontal>.swiper-scrollbar{
+	background-color: rgba(255,255,255,0.5) !important;
+	width: 80%;
+	left: 10%;
+	bottom: 10px;
+}
+.swiper-scrollbar>.swiper-scrollbar-drag{
+	background-color: rgba(255,255,255,0.7) !important;
+}
 .null {
 	background-color: #f5f4f4;
 	height: 60px;
@@ -29,7 +46,7 @@ body {
 .searchBar {
 	display: flex;
 	height: 45px;
-	width: 99%;
+	width: 100%;
 	background-color: white;
 	align-items: center;
 }

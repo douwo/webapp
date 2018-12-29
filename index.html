@@ -8,8 +8,8 @@
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="css/nav.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
@@ -62,15 +62,13 @@
 					</svg>
 				</a>
 			</div>
-			<div class="mui-slider">
-				<div class="mui-slider-group">
-					<div class="mui-slider-item">
-						<img src="images/banner5.jpg" />
-					</div>
-					<div class="mui-slider-item">
-						<img src="images/banner6.jpg" />
-					</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/banner5.jpg" /></div>
+					<div class="swiper-slide"><img src="images/banner6.jpg" /></div>
 				</div>
+				<!-- 如果需要滚动条 -->
+				<div class="swiper-scrollbar"></div>
 			</div>
 			<div class="title">
 				<h3>新闻中心</h3>
@@ -123,7 +121,7 @@
 				<p>EXPERT TEAM</p>
 			</div>
 			<div class="EXPERT-TEAM">
-				<div class="swiper-container" style="height: 220px;overflow: hidden;">
+				<div class="swiper-container2" style="height: 220px;overflow: hidden;">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="content">
@@ -209,7 +207,7 @@
 				<h4>023-81390999</h4>
 				<h5 class="dizhi"><img src="images/dizhi.png" height="20"/>重庆市沙坪坝区大学城思贤路200号</h5>
 				<div class="mapGo" onclick="window.location.href = 'http://3gimg.qq.com/lightmap/v1/wxmarker/index.html?marker=coord:29.58646,106.30131;title:%E9%87%8D%E5%BA%86%E6%B5%B7%E5%90%89%E4%BA%9A;addr:%E4%B8%AD%E5%9B%BD%E9%87%8D%E5%BA%86%E5%B8%82%E9%87%8D%E5%BA%86%E5%B8%82%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8C%BA&referer=wexinmp_profile'">
-					<img src="images/point.png" height="60"/>
+					<img src="images/point.png" height="60" />
 					<div class="bg"></div>
 				</div>
 			</div>
@@ -299,6 +297,11 @@
 	</body>
 	<script>
 		var mySwiper = new Swiper('.swiper-container', {
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			}
+		});
+		var mySwiper2 = new Swiper('.swiper-container2', {
 			loop: true, // 循环模式选项
 			navigation: {
 				nextEl: '.swiper-button-next',
@@ -309,4 +312,5 @@
 			window.top.location.href = this.href;
 		});
 	</script>
+
 </html>
