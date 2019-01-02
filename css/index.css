@@ -156,7 +156,7 @@ input[type=search],
 }
 .read-more{
 	display: flex;justify-content: center;align-items: center;
-	height: 100px;
+	height: 80px;
 	background-color: #fff;
 }
 .read-more>a {
@@ -349,6 +349,8 @@ input[type=search],
 	color: #ff7c00;
 }
 .tel{
+	display: inline-block;
+	width: 300px;
 	padding-top: 20px;
 	padding-left: 20px;
 	background-color: #fff;
@@ -358,7 +360,7 @@ input[type=search],
 	color: #ff7c00;
 	font-size: 22px;
 	font-weight: 400;
-	padding-top: 6px;
+	padding-top: 0px;
 	padding-bottom: 4px;
 	margin: 0;
 }
@@ -487,11 +489,13 @@ input[type=search],
 	top: 2px;
 	right: 4px;
 }
+.coment{
+	width: 100%;
+	background-color: #fff;
+}
 .mapGo{
-	position: absolute;
-	right: 40px;
-	bottom: 0px;
-	z-index: 11;
+	display: inline-block;
+	width: calc(100% - 310px);
 }
 .mapGo>img{
 	animation: bounce 2s infinite;
