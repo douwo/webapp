@@ -9,7 +9,7 @@ html,body{
 .title2{
 	color: #0776bc;
 }
-.mui-ios .mui-table-view-cell{
+.mui-table-view-cell{
 	border-radius: 4px;
 	margin-top: 3px;
 	background-color: #fff;
@@ -18,5 +18,8 @@ html,body{
 	background-color: transparent;
 }
 .mui-table-view-cell:after{
+	background-color: transparent;
+}
+.mui-table-view:before{
 	background-color: transparent;
 }

@@ -23,37 +23,41 @@ body {
 	bottom: calc(20vh - 60px);
 }
 .mui-row{
-	padding: 0 1.5vw;
-	background-color: #fff;
+	/*padding: 0 1.5vw;*/
+	background-color: #eee;
 }
 .doctor{
 	position: relative;
-	height: 44vh;
-	width: 46vw;
-	overflow: hidden;
-	margin-left: 1.5vw;
+	height: 65vw;
+	width: 49vw;
+	padding: 0px 10px;
+    margin: 0 0 12px 0;
+    overflow: hidden;
+}
+.jianjie>li:before{
+	content: "";
+	height: 10px;
+	width: 10px;
 }
 .doctor-card-img img{
 	width: 100%;
-	margin-top: 3vw;
 }
 .doctor-card-img{
 	overflow: hidden;
 	height: 50vw;
 }
 .doctor-car:nth-child(2n){
-	padding-left:1.5vw;
+	padding-left:2vw;
 }
 .doctor-car:nth-child(2n+1){
-	padding-right:1.5vw;
+	padding-right:2vw;
 }
 .doctor-car-msg{
 	height: 64px;
 	width: 100%;
 	background-color: #fff;
-	padding-top: 16px;
+	padding: 1.5vw 0 2vw 0;
 	padding-left: 10px;
-	box-shadow: 0 0 16px -3px #ccc;
 }
 .doctor-car-msg>.name{
 	color: #ff7c00;
@@ -71,31 +75,30 @@ body {
 }
 .Apage{
 	position: absolute;
-	padding: 0 0.5vw;
-	padding-top: 0.25vw;
 	transition: all 2s; 
 	transform: rotateY(0);
 	transform-origin: left;
 	perspective: 500;
 	-webkit-perspective: 500;
+	box-shadow: 0 0 6px -3px #aaa;
 }
 .Apage:hover>.Bpage{
 	transition: all 1s;
 	transform: rotateY(0deg);
 	transform-origin: right;
 	perspective: 500;
+	background-color: #ff7c00;
 	-webkit-perspective: 500;
 }
 .Bpage{
-	background-color: #ff7c00;
+	background-color: transparent;
 	color: #fff;
 	height: auto;
 	overflow: hidden;
 	position: absolute;
-	top: 3vw;
-	padding: 1.5vw 1.5vw;
-	padding-bottom: 0;
-	left: 0;
+	top: 0;
+	padding: 2vw 2vw;
+	padding-bottom: 6vw;
 	transition: all .6s;
 	transform: rotateY(180deg);
 	transform-origin: right;
@@ -103,6 +106,7 @@ body {
 	-webkit-perspective: 500;
 }
 .Bpage:hover{
+	background-color: #ff7c00;
 	transform: rotateY(0deg);
 	transform-origin: right;
 	perspective: 500;
@@ -114,9 +118,9 @@ body {
 	color: #fff;
 }
 .Bpage img:nth-child(1){
-	height: 22px;
-	width: 22px;
-	vertical-align: text-bottom;
+	height: 19px;
+	width: 19px;
+	vertical-align: middle;
 	margin-right: 8px;
 }
 .Bpage ul{
@@ -131,7 +135,7 @@ body {
 	text-decoration: underline; 
 }
 .time-no{
-	color: #ddd;
+	color: rgba(255,255,255,0.6);
 	text-decoration: none !important;
 }
 .jianjie>li{

@@ -31,8 +31,8 @@ body {
 	background-color: rgba(255,255,255,0.7) !important;
 }
 .null {
-	background-color: #f5f4f4;
-	height: 60px;
+	background-color: #000;
+	height: 20px;
 }
 .tongzhi{
 	height: 23px;
@@ -62,9 +62,24 @@ body {
 	top: 2px;
 }
 .mui-icon-search:before {
+	content: "";
 	position: absolute;
-	top: 7px;
-	left: 5px;
+	top: 11px;
+	left: 11px;
+	height: 13px;
+	width: 13px;
+	background: url(../images/search.png);
+	background-size: cover;
+}
+.mui-input-row.mui-search:before{
+	content: "";
+	position: absolute;
+	left: 11px;
+	top: 29px;
+	height: 13px;
+	width: 13px;
+	background: url(../images/search.png);
+	background-size: cover;
 }
 
 input[type=search],
@@ -72,14 +87,13 @@ input[type=search],
 	border-radius: 40px;
 }
 
-
 .mui-slider,.mui-slider img {
 	height: 220px;
 }
 
 
 .title {
-	padding: 16px 0;
+	padding: 30px 0 1px 0;
 	background-color: #fff;
 }
 
@@ -89,9 +103,11 @@ input[type=search],
 	color: #ff7c00;
 	text-align: center;
 	padding: 6px 0;
-	font-size: 18px;
+	font-size: 22px;
 }
-
+.news-title{
+	font-size: 16px;
+}
 .title>h3:before {
 	content: "";
 	position: absolute;
@@ -138,18 +154,19 @@ input[type=search],
 	height: 100px;
 	max-width: 100px;
 }
-
-.read-more {
-	margin: 30px auto 10px auto;
+.read-more{
+	display: flex;justify-content: center;align-items: center;
+	height: 100px;
+	background-color: #fff;
+}
+.read-more>a {
 	width: 100px;
 	padding: 2px 10px;
 	border: 1px solid #898989;
 	color: #898989;
 	font-size: 13px;
 	border-radius: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: #fff;
 }
 
 .EXPERT-TEAM {
@@ -263,49 +280,49 @@ input[type=search],
 	bottom: 10px;
 	left: 36%;
 	color: #fff;
+}
+.read-more-doctor>a{
+	background: transparent;
 	border: 1px solid #fff;
 }
 
 .swiper-button-prev {
 	top: 60% !important;
 	background-image: url(../images/left02.png) !important;
-	background-size: 24px 24px !important;
-	position: relative;
+	background-size: 14px 14px !important;
 	width: 20px !important;
 	height: 20px !important;
+	left: 1vw;
+}
+.swiper-button-next{
+	top: 60% !important;
+	background-image: url(../images/right02.png) !important;
+	background-size: 14px 14px !important;
+	width: 20px !important;
+	height: 20px !important;
+	right: 1vw;
 }
 .swiper-button-prev:before{
 	content: "";
 	position: absolute;
-	height: 24px;
-	width: 24px;
+	height: 20px;
+	width: 20px;
 	background-color: rgba(255,255,255,0.3);
-	top: -2px;
 	left: 0;
 	border-radius: 100%;
-}
-.swiper-button-next{
-	top: 60% !important;
-	position: relative;
-	background-image: url(../images/right02.png) !important;
-	background-size: 24px 24px !important;
-	width: 20px !important;
-	height: 20px !important;
 }
 .swiper-button-next:before{
 	content: "";
 	position: absolute;
-	height: 24px;
-	width: 24px;
+	height: 20px;
+	width: 20px;
 	background-color: rgba(255,255,255,0.3);
-	top: -2px;
 	right: 0;
 	border-radius: 100%;
 }
 .EQUIPMENT{
 	background-color: #fff;
 	padding-left: 4vw;
-	margin-bottom: 30px;
 }
 .EQUIPMENT-card{
 	background-color: #fff;
@@ -320,9 +337,6 @@ input[type=search],
 .EQUIPMENT-card>p{
 	font-size: 14px;
 	color: #222;
-}
-.EQUIPMENT+.read-more{
-	margin-bottom: 30px;
 }
 .img01{
 	background: url(../images/img01.png);
@@ -465,7 +479,7 @@ input[type=search],
 	margin: 0;
 	font-size: 14px;
 	color: #222;
-	padding-bottom: 10px;
+	padding: 8px 0 10px 0;
 	
 }
 .dizhi>img{
@@ -485,7 +499,7 @@ input[type=search],
 .bg{
 	height: 12px;
 	width: 30px;
-	background-color: #FF7C0033;
+	background-color: rgba(255,124,0,0.1);
 	border-radius: 100%;
 	position: relative;
 	left: 4px;
@@ -503,7 +517,7 @@ input[type=search],
 	animation: bounce 2s infinite;
 }
 .logoQR{
-	padding: 40px 10px;
+	padding: 80px 10px 20px;
 	text-align: center;
 	font-size: 14px;
 	background-color: #fff;
@@ -526,4 +540,11 @@ input[type=search],
     0%,20%,50%,80%,100%{transform:translateY(0);}
     40%{transform:translateY(-10px);}
     60%{transform:translateY(-4px);}
+}
+
+.mui-table-view-cell:after{
+	width: 85%;
+}
+.mui-media>a.mui-active{
+	background-color: transparent !important;
 }

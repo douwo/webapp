@@ -28,13 +28,13 @@
 
 .shebei-msg li {
 	text-align: left;
-	font-size: 12px;
+	font-size: 14px;
 	list-style: none;
 	line-height: 18px;
 	color: #333;
 }
 
-.shebei-msg li:before {
+/*.shebei-msg li:before {
 	content: "›";
 	font-size: 18px;
 	position: relative;
@@ -42,4 +42,4 @@
 	text-shadow: none;
 	right: 5px;
 	color: #ff7c00;
-}
+}*/

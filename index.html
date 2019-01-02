@@ -21,6 +21,10 @@
 			a {
 				color: #9f9f9f;
 			}
+			
+			.mui-search .mui-placeholder {
+				pointer-events: none;
+			}
 		</style>
 	</head>
 
@@ -44,7 +48,7 @@
 				<img class="user-icon" src="images/医院介绍.png" height="23" />
 				<div class="mui-tab-label">医院介绍</div>
 			</a>
-			<a class="mui-tab-item" href="">
+			<a class="mui-tab-item" href="mypage.html">
 				<img class="user-icon" src="images/个人中心.png" height="23" />
 				<div class="mui-tab-label">个人中心</div>
 			</a>
@@ -77,12 +81,23 @@
 			<div>
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell mui-media">
-						<a href="javascript:;" class="">
-							<img class="mui-media-object mui-pull-left" src="images/bg1.png">
+						<a href="/m/webapp/newsContent/20190102/Content.html" class="">
+							<img class="mui-media-object mui-pull-left" src="newsContent/20190102/fm.jpg">
 							<div class="mui-media-body">
-								文字标题
+								<span class="news-title">我院正式开通医保异地结算</span>
 								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
-								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<p class="gaiyao">按照国家医疗保障局等部门《关于切实做好当前跨省异地就医住院费...</p>
+								<div class="more">more+</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;" class="">
+							<img class="mui-media-object mui-pull-left" src="newsContent/20190102/fm2.jpg">
+							<div class="mui-media-body">
+								<span class="news-title">院校合作 共襄新程</span>
+								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;"></span>发表于2018-12-20</p>
+								<p class="gaiyao">12月11日，为加强理论与实践的联系，重庆城市管理职业学院康复...</p>
 								<div class="more">more+</div>
 							</div>
 						</a>
@@ -91,20 +106,9 @@
 						<a href="javascript:;" class="">
 							<img class="mui-media-object mui-pull-left" src="images/bg1.png">
 							<div class="mui-media-body">
-								文字标题
-								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
-								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-								<div class="more">more+</div>
-							</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media">
-						<a href="javascript:;" class="">
-							<img class="mui-media-object mui-pull-left" src="images/bg1.png">
-							<div class="mui-media-body">
-								文字标题
-								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;">【热门头条】</span>发表于2018-12-20</p>
-								<p class="gaiyao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+								<span class="news-title">共建医联体 提升肿瘤诊治水平</span>
+								<p class="mui-ellipsiss" style="font-size: 12px;"><span style="color: red;"></span>发表于2018-12-20</p>
+								<p class="gaiyao">12月5日，重庆市肿瘤医院与重庆（中美）海吉亚肿瘤医院签订共建... </p>
 								<div class="more">more+</div>
 							</div>
 						</a>
@@ -169,7 +173,6 @@
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 				</div>
-
 				<div class="read-more read-more-doctor">
 					<a href="doctorCenter.html" style="color: #fff;">更多医生 >></a>
 				</div>
@@ -179,20 +182,20 @@
 				<p>CUTTING-EDGE EQUIPMENT</p>
 			</div>
 			<div class="EQUIPMENT">
-				<div class="EQUIPMENT-card">
-					<img src="images/logo.jpg" />
+				<div class="EQUIPMENT-card" onclick="window.location.href = '设备Content.html'">
+					<img src="images/MRI.png" />
 					<p>1.5T磁共振成像MRI</p>
 				</div>
 				<div class="EQUIPMENT-card">
-					<img src="images/logo.jpg" />
+					<img src="images/MRI.png" />
 					<p>1.5T磁共振成像MRI</p>
 				</div>
 				<div class="EQUIPMENT-card">
-					<img src="images/logo.jpg" />
+					<img src="images/MRI.png" />
 					<p>1.5T磁共振成像MRI</p>
 				</div>
 				<div class="EQUIPMENT-card">
-					<img src="images/logo.jpg" />
+					<img src="images/MRI.png" />
 					<p>1.5T磁共振成像MRI</p>
 				</div>
 			</div>
@@ -203,9 +206,9 @@
 				让患者满意，是我们莫大的使命
 			</div>
 			<div class="tel">
-				<h5 style="color: #000;"><img src="images/tel.png" height="18"/>&nbsp;&nbsp;24小时急救电话</h5>
+				<h5 style="color: #000;"><img src="images/tel.png" alt="" height="16"/>&nbsp;&nbsp;24小时急救电话</h5>
 				<h4>023-81390999</h4>
-				<h5 class="dizhi"><img src="images/dizhi.png" height="20"/>重庆市沙坪坝区大学城思贤路200号</h5>
+				<h5 class="dizhi">地址：重庆市沙坪坝区大学城思贤路200号</h5>
 				<div class="mapGo" onclick="window.location.href = 'http://3gimg.qq.com/lightmap/v1/wxmarker/index.html?marker=coord:29.58646,106.30131;title:%E9%87%8D%E5%BA%86%E6%B5%B7%E5%90%89%E4%BA%9A;addr:%E4%B8%AD%E5%9B%BD%E9%87%8D%E5%BA%86%E5%B8%82%E9%87%8D%E5%BA%86%E5%B8%82%E6%B2%99%E5%9D%AA%E5%9D%9D%E5%8C%BA&referer=wexinmp_profile'">
 					<img src="images/point.png" height="60" />
 					<div class="bg"></div>
@@ -285,6 +288,9 @@
 				</li>
 				<li class="mui-table-view-cell">
 					<a href="shebeiCenter.html">尖端设备</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="chenggonganli.html">成功案例</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a href="comentUS.html">联系我们</a>

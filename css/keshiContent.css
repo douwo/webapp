@@ -1,23 +1,27 @@
-.mui-control-item{
+.mui-control-item {
 	background-color: ;
 }
-.mui-segmented-control{
+
+.mui-segmented-control {
 	border: 0;
 }
-.mui-segmented-control>.mui-control-item{
+
+.mui-segmented-control>.mui-control-item {
 	color: #999;
 	border: none;
 	height: 44px;
 	line-height: 44px;
 }
-.mui-segmented-control .mui-control-item.mui-active{
+
+.mui-segmented-control .mui-control-item.mui-active {
 	background-color: transparent;
 	color: #222;
 	font-size: 16px;
 	position: relative;
 	top: 2px;
 }
-.mui-segmented-control .mui-control-item.mui-active:before{
+
+.mui-segmented-control .mui-control-item.mui-active:before {
 	content: "";
 	position: absolute;
 	height: 2px;
@@ -26,33 +30,43 @@
 	bottom: 2px;
 	left: 20%;
 }
-.title2{
+
+.title2 {
 	margin-left: 8px;
 	font-size: 14px !important;
 	color: #ff7c00;
 }
-.user-content>h4{
-	color: #222;	
+
+.user-content>h4 {
+	color: #222;
+	padding-bottom: 16px;
+	margin-bottom: 10px;
 }
-.user-content h5{
+
+.user-content h5 {
 	text-align: center;
 	position: relative;
 	margin: 14px 0;
 	color: #FF7C00;
 }
-.user-content h5:before{
-	content: ">>";
-	position: relative;
-	right: 4px;
+
+.cls-1 {
+	fill: #FF7C00;
+	fill-rule: evenodd;
 }
-.user-content h5:after{
-	content: "<<";
-	position: relative;
-	left: 4px;
-}
-.user-content p.black{
+
+.user-content p.black {
 	color: #222;
 }
-.user-content p{
+
+.user-content p {
 	margin: 0;
+	font-size: 14px;
+}
+
+.user-content>p {
+	color: #555;
+}
+#item2{
+	background-color: #999 !important;
 }

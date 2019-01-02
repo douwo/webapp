@@ -16,7 +16,7 @@
 				color: #0776bc;
 				background-color: transparent;
 				top: 54% !important;
-				left: 40vw;
+				left: 180px;
 			}
 			
 			.clear:active,
@@ -26,6 +26,12 @@
 			
 			.user-content {
 				height: calc(100vh - 120px);
+			}
+			.mui-navigate-right:after, .mui-push-right:after{
+				content: "";
+			}
+			.mui-navigate-right{
+				color: #737373 !important;
 			}
 		</style>
 	</head>
@@ -45,7 +51,7 @@
 			<li class="mui-table-view-cell">
 				<a style="" href="tel:81390801" class="mui-navigate-right">体检中心：
 					<sapn class="title2">81390801</sapn>
-					<a class="mui-btn clear" href="tel:17830859168">17830859168(24小时)</a>
+					<a class="mui-btn clear" href="tel:17830859168">17830859168<span style="color: #737373;">(24小时)</span></a>
 				</a>
 			</li>
 			<li class="mui-table-view-cell">
