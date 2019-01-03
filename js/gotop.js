@@ -5,7 +5,7 @@ $(function() {
 		}, 'slow');
 	});
 	$('.homepage').click(function() {
-		window.location.href = "index.html"
+		window.location.href = "/m/webapp/"
 	});	$(".gotop").hide(); 
 });
 

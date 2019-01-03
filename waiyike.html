@@ -38,7 +38,7 @@
 			</div>
 		</div>
 		<div style="">
-			<div id="item1" class="mui-control-content">
+			<div id="item1" class="mui-control-content mui-active">
 				<div class="shebei-img">
 					<img src="images/外一科.jpg" />
 				</div>
@@ -124,7 +124,7 @@
 					<br /><br />
 				</div>
 			</div>
-			<div id="item2" class="mui-control-content mui-active">
+			<div id="item2" class="mui-control-content">
 				<div class="mui-row" style="padding-top: 10px;">
 					<div class="mui-col-xs-6 doctor">
 						<div class="Apage">
@@ -150,10 +150,12 @@
 									<li>重庆市沙坪坝区政协第九、 十、十一届政协委员。
 									</li>
 									<li>重庆市放射肿瘤学学会委员。</li>
-									<li>重庆市癌症康复与姑息治疗 专委会委员。
+									<li>重庆市癌症康复与姑息治疗 专委会委员...
 									</li>
-									<li onclick="window.location.href='doctorContent.html'">详情>></li>
 								</ul>
+								<div class="more" onclick="window.location.href='doctorContent.html'">
+									详情&nbsp;>>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -181,10 +183,12 @@
 									<li>重庆市沙坪坝区政协第九、 十、十一届政协委员。
 									</li>
 									<li>重庆市放射肿瘤学学会委员。</li>
-									<li>重庆市癌症康复与姑息治疗 专委会委员。
+									<li>重庆市癌症康复与姑息治疗 专委会委员...
 									</li>
-									<li>详情>></li>
 								</ul>
+								<div class="more">
+									详情&nbsp;>>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -212,10 +216,12 @@
 									<li>重庆市沙坪坝区政协第九、 十、十一届政协委员。
 									</li>
 									<li>重庆市放射肿瘤学学会委员。</li>
-									<li>重庆市癌症康复与姑息治疗 专委会委员。
+									<li>重庆市癌症康复与姑息治疗 专委会委员...
 									</li>
-									<li>详情>></li>
 								</ul>
+								<div class="more">
+									详情&nbsp;>>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -243,10 +249,12 @@
 									<li>重庆市沙坪坝区政协第九、 十、十一届政协委员。
 									</li>
 									<li>重庆市放射肿瘤学学会委员。</li>
-									<li>重庆市癌症康复与姑息治疗 专委会委员。
+									<li>重庆市癌症康复与姑息治疗 专委会委员...
 									</li>
-									<li>详情>></li>
 								</ul>
+								<div class="more">
+									详情&nbsp;>>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -270,6 +278,37 @@
 		</div>
 		<script type="text/javascript">
 			mui.init()
+		</script>
+		<script type="text/javascript">
+			$(".Apage").click(function() {
+				if($(this).hasClass("user-tap")) {
+					$(this).children(".Bpage").css({
+						"transition": "all 1s",
+						"opacity": "0",
+						"transform": "rotateY(80deg)",
+						"transform-origin": "right",
+						"perspective": "500",
+						"background-color": "transparent",
+						"webkit-perspective": "500",
+					});
+					$(this).removeClass("user-tap");
+				} else {
+					$(this).children(".Bpage").css({
+						"transition": "all 1s",
+						"opacity": "1",
+						"transform": "rotateY(0deg)",
+						"transform-origin": "right",
+						"perspective": "500",
+						"background-color": "#ff7c00",
+						"webkit-perspective": "500",
+					});
+					$(this).addClass("user-tap");
+				}
+			})
+			$(".Bpage").click(function() {
+				$(this).attr("style", 'transition: all 1s ease 0s; transform: rotateY(180deg); transform-origin: right center 0px; background-color: rgb(255, 124, 0); perspective: 500px;')
+				//				$(this).hide()
+			})
 		</script>
 	</body>
 

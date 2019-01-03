@@ -15,7 +15,6 @@ body {
 .swiper-container{
 	height: 200px;
 	display: flex;
-	overflow: hidden;
 }
 .swiper-container img{
 	height: 200px;
@@ -323,6 +322,7 @@ input[type=search],
 .EQUIPMENT{
 	background-color: #fff;
 	padding-left: 4vw;
+	padding-top: 10px;
 }
 .EQUIPMENT-card{
 	background-color: #fff;
@@ -410,27 +410,32 @@ input[type=search],
 }
 .title2{
 	position: relative;
+	top: -8px;
 }
 .title2:before{
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -2px;
+	bottom: -5px;
 	height: 1px;
 	width: 26%;
 	background-color: #fff;
 }
 .title3{
 	position: relative;
+	top: -8px;
 }
 .title3:before{
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -2px;
+	bottom: -5px;
 	height: 1px;
 	width: 26%;
 	background-color: #222;
+}
+.img-bg3>.title2{
+	top: -4px;
 }
 .tel2>div>img{
 	width: 80%;
@@ -470,7 +475,7 @@ input[type=search],
 	justify-content: center;
 }
 .img-bg3>span{
-	line-height: 23px;
+	line-height: 22px;
 }
 .img-bg3>.title2:before{
 	bottom: 0px;
